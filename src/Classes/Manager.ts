@@ -1,4 +1,4 @@
-import IEmployee from "../Contracts/Employee";
+import IEmployee from '../Contracts/Employee';
 
 class Manager implements IEmployee {
     name: string; 
@@ -12,8 +12,10 @@ class Manager implements IEmployee {
         this.position = position; 
         this.assignedEmployees = []
     }
+    addSubordinate(employee: IEmployee): void {
+        this.assignedEmployees.push(employee)
+    }
 }
-
 
 
 

@@ -3,6 +3,7 @@ import Circle from './Classes/Circle';
 import Rectangle from './Rectangle/Rectangle';
 import Manager from './Classes/Manager';
 import IEmployee from './Contracts/Employee';
+import Subordinate from './Classes/Subordinate';
 
 const circle1 = new Circle("circle", "blue", 12);
 const circle2= new Circle("circle", "black", 5);
@@ -13,5 +14,18 @@ console.log(circle1, circle2, circle3, rectangle1);
 circle1.draw();
 rectangle1.draw(); 
 
-
-
+const subordinate1 = new Subordinate(
+    "Necati",
+    38, 
+    "Intern"
+)
+const subordinate2 = new Subordinate(
+    "Ugur",
+    35,
+    "Blockchain Expert"
+)
+const subordinate3 = new Subordinate(
+    "Gonca", 
+    49, 
+    "Cryptography Expert"
+)
