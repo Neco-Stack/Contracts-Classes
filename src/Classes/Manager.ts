@@ -1,15 +1,11 @@
 import IEmployee from '../Contracts/Employee';
+import Employee from './EmployeeClass';
 
-class Manager implements IEmployee {
-    name: string; 
-    age: number; 
-    position: string; 
+class Manager extends Employee {
     private assignedEmployees: IEmployee[]; 
 
-    constructor(name: string, age: number, position: string){
-        this.name = name; 
-        this.age = age;
-        this.position = position; 
+    constructor(name: string, age: number, startDate: Date){
+        super(name, age, startDate)
         this.assignedEmployees = []
     }
     addSubordinate(employee: IEmployee): void {
