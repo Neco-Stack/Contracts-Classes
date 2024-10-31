@@ -29,3 +29,11 @@ const subordinate3 = new Subordinate(
     49, 
     "Cryptography Expert"
 )
+const manager1 = new Manager(
+    "Farid", 
+    32, 
+    "Manager Digital Investments"
+)
+manager1.addSubordinate(subordinate1); 
+manager1.addSubordinate(subordinate2); 
+manager1.addSubordinate(subordinate3); 
